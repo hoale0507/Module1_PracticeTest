@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Nhập vào 1 số bất kỳ'));
+    let myArray = [1,2,3,4,5,6];
+    function getIndex(n,arr){
+        let index = -1;
+        for(let i = 0; i < arr.length; i++){
+            if(n === arr[i]){
+                index = i;
+            }
+        }
+        return index;
+    }
+    let index = getIndex(n,myArray);
+    if(index === -1){
+        alert('Giá trị ' + n + ' không có trong mảng');
+    } else {
+        alert('Giá trị ' + n + ' nằm ở vị trí ' + index + ' trong mảng');
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<script>
+
+let vowels = ['a', 'o', 'e', 'u', 'i'];
+let myString = prompt('Hãy nhập vào 1 chuỗi ký tự bất kỳ!');
+
+function checkVowel(char){
+    if(vowels.indexOf(char) !== -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let count = 0;
+function countVowel(string){
+    for(let i = 0; i < string.length; i++){
+        if(checkVowel(string[i])){
+            count++;
+        }
+    }
+    return count;
+}
+let result = countVowel(myString);
+console.log(result);
+alert('Chuỗi ' + myString + ' có ' + result + ' ký tự nguyên âm');
+
+</script>
+
+</body>
+</html>

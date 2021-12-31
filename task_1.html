@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ĐỀ THI THỰC HÀNH  - CÂU 1</title>
+</head>
+<body>
+<script>
+    let result;
+
+    function solve(a,b){
+        if(a === 0){
+            if(b === 0){
+                result = 'Phương trình có vô số nghiệm';
+            } else {
+                result = 'Phương trình vô nghiệm';
+            }
+        } else {
+            result = -b / a;
+        }
+        return result;
+    }
+     console.log(solve(5,4));
+
+    let a = parseFloat(prompt('Hãy nhập hệ số a'));
+    let b = parseFloat(prompt('Hãy nhập hệ số b'));
+    let c = solve(a,b);
+
+    document.write('Kết quả của phương trình có hệ số ' + a + ' và ' + b + ' là: ' + c );
+</script>
+</body>
+</html>
